@@ -1,3 +1,4 @@
 global using CamKoob.Orders.Application.DTOs;
 global using CamKoob.Orders.IoC;
-global using CamKoob.Orders.Domain.Entities;
+global using CamKoob.Orders.Application.Services;
+global using Microsoft.AspNetCore.Mvc;

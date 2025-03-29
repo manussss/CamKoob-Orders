@@ -14,10 +14,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapPost("api/v1/orders", (CreateOrderDTO dto) =>
+app.MapPost("api/v1/orders", async (
+    [FromBody] CreateOrderDTO dto,
+    [FromServices] IOrderService orderService) =>
 {
-    var orderItems = dto.OrderItems.Select(x => new OrderItem(x.ProductName, x.Price, x.Quantity)).ToList();
-    var order = new Order(dto.Code, orderItems);
+    await orderService.CreateAsync(dto);
+
+    return Results.Created();
 })
 .WithName("PostOrder")
 .WithOpenApi();
