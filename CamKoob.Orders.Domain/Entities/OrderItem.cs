@@ -10,6 +10,8 @@ public class OrderItem : Entity
 
     public decimal TotalPrice => Price * Quantity;
 
+    protected OrderItem() {}
+
     public OrderItem(string productName, decimal price, int quantity)
     {
         ProductName = productName;

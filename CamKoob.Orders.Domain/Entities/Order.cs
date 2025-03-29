@@ -6,6 +6,8 @@ public class Order : Entity
     public IEnumerable<OrderItem> Items { get; private set; } = [];
     public decimal TotalPrice { get; private set; }
 
+    protected Order() { }
+
     public Order(string code, IEnumerable<OrderItem> items)
     {
         Code = code;
