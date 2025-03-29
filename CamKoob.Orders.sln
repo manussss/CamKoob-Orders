@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamKoob.Orders.Domain", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamKoob.Orders.Application", "CamKoob.Orders.Application\CamKoob.Orders.Application.csproj", "{618CA681-D880-440D-8DF4-C22FB093C0C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamKoob.Orders.Infra", "CamKoob.Orders.Infra\CamKoob.Orders.Infra.csproj", "{540B888E-F84F-46CB-A31C-16C94CD20D7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamKoob.Orders.IoC", "CamKoob.Orders.IoC\CamKoob.Orders.IoC.csproj", "{61A03DA3-CEDA-4486-8A9A-66593DA62E29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{618CA681-D880-440D-8DF4-C22FB093C0C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{618CA681-D880-440D-8DF4-C22FB093C0C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{618CA681-D880-440D-8DF4-C22FB093C0C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{540B888E-F84F-46CB-A31C-16C94CD20D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{540B888E-F84F-46CB-A31C-16C94CD20D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{540B888E-F84F-46CB-A31C-16C94CD20D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{540B888E-F84F-46CB-A31C-16C94CD20D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A03DA3-CEDA-4486-8A9A-66593DA62E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A03DA3-CEDA-4486-8A9A-66593DA62E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A03DA3-CEDA-4486-8A9A-66593DA62E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A03DA3-CEDA-4486-8A9A-66593DA62E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

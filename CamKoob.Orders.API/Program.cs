@@ -2,6 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDatabase();
 
 var app = builder.Build();
 
@@ -35,4 +36,3 @@ app.MapGet("api/v1/orders{orderId}", (Guid orderId) =>
 .WithOpenApi();
 
 await app.RunAsync();
-
