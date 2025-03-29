@@ -16,7 +16,8 @@ app.UseHttpsRedirection();
 
 app.MapPost("api/v1/orders", (CreateOrderDTO dto) =>
 {
-    
+    var orderItems = dto.OrderItems.Select(x => new OrderItem(x.ProductName, x.Price, x.Quantity)).ToList();
+    var order = new Order(dto.Code, orderItems);
 })
 .WithName("PostOrder")
 .WithOpenApi();
