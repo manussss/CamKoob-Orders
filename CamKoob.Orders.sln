@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamKoob.Orders.API", "CamKoob.Orders.API\CamKoob.Orders.API.csproj", "{4DC1FF5D-FF3A-4C42-9ACC-409778148FF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamKoob.Orders.Domain", "CamKoob.Orders.Domain\CamKoob.Orders.Domain.csproj", "{422B5786-602B-4607-A734-4780D3AFD7FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{4DC1FF5D-FF3A-4C42-9ACC-409778148FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DC1FF5D-FF3A-4C42-9ACC-409778148FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DC1FF5D-FF3A-4C42-9ACC-409778148FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422B5786-602B-4607-A734-4780D3AFD7FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422B5786-602B-4607-A734-4780D3AFD7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422B5786-602B-4607-A734-4780D3AFD7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422B5786-602B-4607-A734-4780D3AFD7FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
