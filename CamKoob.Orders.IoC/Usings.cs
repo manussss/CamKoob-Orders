@@ -5,3 +5,4 @@ global using CamKoob.Orders.Domain.Interfaces;
 global using CamKoob.Orders.Infra.Repositories;
 global using CamKoob.Orders.Application.Services;
 global using Microsoft.Extensions.Configuration;
+global using CamKoob.Orders.Application.Queries;

@@ -5,6 +5,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDatabase(builder.Configuration);
 builder.Services.AddRepositories();
 builder.Services.AddServices();
+builder.Services.AddQueries();
 
 var app = builder.Build();
 
@@ -27,16 +28,25 @@ app.MapPost("api/v1/orders", async (
 .WithName("PostOrder")
 .WithOpenApi();
 
-app.MapGet("api/v1/orders", () =>
+app.MapGet("api/v1/orders", async ([FromServices] IOrderQuery orderQuery) =>
 {
-    
+    var orders = await orderQuery.GetAllAsync();
+
+    return Results.Ok(orders);
 })
 .WithName("GetOrders")
 .WithOpenApi();
 
-app.MapGet("api/v1/orders{orderId}", (Guid orderId) =>
+app.MapGet("api/v1/orders{orderId}", async (
+    Guid orderId,
+    [FromServices] IOrderQuery orderQuery) =>
 {
-    
+   var order = await orderQuery.GetByIdAsync(orderId);
+   
+   if (order is null)
+       return Results.NotFound();
+
+    return Results.Ok(order);
 })
 .WithName("GetOrderById")
 .WithOpenApi();
