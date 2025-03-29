@@ -11,6 +11,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CamKoob.Orders.Infra\CamKoob.Orders.Infra.csproj" />
+    <ProjectReference Include="..\CamKoob.Orders.Application\CamKoob.Orders.Application.csproj" />
   </ItemGroup>
 
 </Project>
